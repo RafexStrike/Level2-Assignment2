@@ -4,7 +4,7 @@
 This project is a backend API for a vehicle rental management system. It allows managing vehicles, customers, and bookings with role-based authentication and authorization.
 
 ## Live Deployment
-[Live URL to be added after deployment]
+https://assignment2-eight-red.vercel.app
 
 ## Features
 - **User Management**: Register, login, and manage customer accounts.
