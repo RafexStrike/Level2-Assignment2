@@ -3,6 +3,7 @@ import initDB from "./configs/db";
 import { userRoutes } from "./modules/users/user.route";
 import { authRoutes } from "./modules/auth/auth.route";
 import { vehicleRoutes } from "./modules/vehicles/vehicle.route";
+import { bookingRoutes } from "./modules/bookings/booking.route";
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/vehicles", vehicleRoutes);
+app.use("/api/v1/bookings", bookingRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
